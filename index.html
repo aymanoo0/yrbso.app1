@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق الجوهرة اونلاين | خدمات الاتصال</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Tailwind CSS (CDN for Layout) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <nav class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <img src="https://drive.google.com/file/d/1xnXaDE9SDbWQggEldwFbNzB5Q_V0E1B8/view?usp=sharing" alt="شعار الجوهرة" class="h-14 w-auto object-contain">
+                    <div class="flex flex-col">
+                        <span class="font-bold text-lg primary-color leading-tight">الجوهرة اونلاين</span>
+                        <span class="text-xs secondary-color font-bold">لخدمات الاتصال</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button class="text-gray-500 hover:text-[#3C217E]"><i class="fas fa-bars text-xl"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
+        
+        <!-- Hero Carousel -->
+        <div class="mb-10 animate-fade-in">
+            <div class="swiper mySwiper shadow-lg">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide bg-primary relative">
+                        <div class="absolute inset-0 opacity-10 pattern-dots"></div>
+                        <div class="flex items-center justify-between w-full px-8 sm:px-16 text-white z-10">
+                            <div class="max-w-lg">
+                                <h2 class="text-2xl sm:text-4xl font-bold mb-2">عروض فبراير الحصرية</h2>
+                                <p class="text-sm sm:text-lg opacity-90">شحن فوري لجميع الشبكات وباقات إنترنت بأسعار منافسة</p>
+                                <button class="mt-4 bg-secondary text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-[#e64a19] transition">اشترك الآن</button>
+                            </div>
+                            <i class="fas fa-gift text-6xl sm:text-8xl opacity-20"></i>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide bg-secondary relative">
+                        <div class="flex items-center justify-between w-full px-8 sm:px-16 text-white z-10">
+                            <div class="max-w-lg">
+                                <h2 class="text-2xl sm:text-4xl font-bold mb-2">سدد فواتيرك بسهولة</h2>
+                                <p class="text-sm sm:text-lg opacity-90">خدمة تسديد فواتير الكهرباء والماء والهاتف الثابت</p>
+                            </div>
+                            <i class="fas fa-file-invoice-dollar text-6xl sm:text-8xl opacity-20"></i>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide bg-gray-900 relative">
+                         <div class="flex items-center justify-between w-full px-8 sm:px-16 text-white z-10">
+                            <div class="max-w-lg">
+                                <h2 class="text-2xl sm:text-4xl font-bold mb-2">باقات الألعاب</h2>
+                                <p class="text-sm sm:text-lg opacity-90">اشحن شدات ببجي وجواهر فري فاير فورياً</p>
+                            </div>
+                            <i class="fas fa-gamepad text-6xl sm:text-8xl opacity-20 secondary-color"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="text-center mb-8 animate-fade-in" style="animation-delay: 0.1s;">
+            <h1 class="text-2xl sm:text-3xl font-bold mb-2 primary-color">خدمة تصميم البطاقات</h1>
+            <p class="text-gray-500 text-base">قم بإضافة معلوماتك واحصل على تصميم احترافي</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Right Column: Inputs & Controls -->
+            <div class="lg:col-span-5 space-y-6 animate-fade-in" style="animation-delay: 0.2s;">
+                
+                <!-- Data Form -->
+                <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-secondary"></div>
+                    <h2 class="text-xl font-bold mb-4 flex items-center primary-color">
+                        <i class="fas fa-edit ml-2 secondary-color"></i> بيانات البطاقة
+                    </h2>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">اسم المحل / المركز</label>
+                            <input type="text" id="shopName" placeholder="مركز الجوهرة للخدمات" class="form-input">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">رقم الواتساب / الاتصال</label>
+                            <input type="text" id="phone" placeholder="77X XXX XXX" dir="ltr" class="form-input text-right">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">الخدمات أو العروض</label>
+                            <textarea id="extraText" rows="3" placeholder="اكتب خدماتك هنا ليتم عرضها في التصميم..." class="form-input"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Templates -->
+                <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                    <h2 class="text-xl font-bold mb-4 flex items-center primary-color">
+                        <i class="fas fa-th-large ml-2 secondary-color"></i> اختر شكل التصميم
+                    </h2>
+                    <div class="grid grid-cols-3 gap-3">
+                        <!-- Template 1 -->
+                        <div class="template-card active group" data-id="1">
+                            <div class="bg-primary h-14 w-full flex items-center justify-center relative">
+                                <i class="fas fa-star text-white text-xs opacity-50"></i>
+                            </div>
+                            <div class="p-2 text-center text-xs font-bold text-gray-700">الجوهرة VIP</div>
+                        </div>
+
+                        <!-- Template 2 -->
+                        <div class="template-card group" data-id="2">
+                            <div class="bg-gradient-to-r from-[#FF5722] to-[#3C217E] h-14 w-full flex items-center justify-center">
+                                <i class="fas fa-bolt text-white text-xs opacity-50"></i>
+                            </div>
+                            <div class="p-2 text-center text-xs font-bold text-gray-700">مودرن</div>
+                        </div>
+
+                        <!-- Template 3 -->
+                        <div class="template-card group" data-id="3">
+                            <div class="bg-white border-b border-gray-200 h-14 w-full flex items-center justify-center">
+                                <span class="primary-color text-xs font-bold border border-[#3C217E] px-2 rounded">رسمي</span>
+                            </div>
+                            <div class="p-2 text-center text-xs font-bold text-gray-700">كلاسيك</div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="downloadBtn" class="w-full bg-primary hover:opacity-90 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-all hover:-translate-y-1 active:scale-95 flex justify-center items-center gap-3">
+                    <i class="fas fa-cloud-download-alt text-xl"></i>
+                    <span>حفظ التصميم في الاستديو</span>
+                </button>
+
+            </div>
+
+            <!-- Left Column: Preview -->
+            <div class="lg:col-span-7 flex flex-col items-center animate-fade-in" style="animation-delay: 0.3s;">
+                <div class="sticky top-24 w-full flex flex-col items-center bg-gray-100 p-4 rounded-3xl border border-gray-200">
+                    <div class="mb-4 flex items-center justify-between w-full px-4">
+                        <div class="flex items-center gap-2 text-gray-500 text-sm font-bold">
+                            <i class="fas fa-eye secondary-color"></i> معاينة التصميم
+                        </div>
+                        <span class="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full">جاهز للتحميل</span>
+                    </div>
+                    
+                    <!-- Canvas Container -->
+                    <canvas id="previewCanvas" width="1080" height="1080" class="shadow-xl"></canvas>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="mt-12 bg-primary text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex justify-center mb-4">
+                 <img src="images/logo.png" alt="الجوهرة" class="h-10 opacity-80 filter brightness-200 grayscale">
+            </div>
+            <p class="text-sm opacity-60">&copy; 2024 تطبيق الجوهرة اونلاين لخدمات الاتصال. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

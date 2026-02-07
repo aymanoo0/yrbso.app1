@@ -1,0 +1,121 @@
+/* Fonts */
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/IBMPlexSansArabic-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/IBMPlexSansArabic-Bold.ttf') format('truetype');
+}
+
+/* Base Styles */
+body {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    background-color: #F9FAFB;
+    color: #1F2937;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Custom Utilities */
+.primary-color { color: #3C217E; }
+.secondary-color { color: #FF5722; }
+.bg-primary { background-color: #3C217E; }
+.bg-secondary { background-color: #FF5722; }
+
+/* Swiper Customization */
+.swiper {
+    width: 100%;
+    height: 180px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .swiper {
+        height: 300px;
+    }
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Pattern Overlay */
+.pattern-dots {
+    background-image: radial-gradient(#ffffff 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Canvas Styling */
+canvas {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    background: #fff;
+    margin-top: 10px;
+}
+
+/* Form Styles */
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    background-color: #F9FAFB;
+    transition: all 0.3s;
+    outline: none;
+}
+
+.form-input:focus {
+    background-color: #FFFFFF;
+    border-color: #3C217E;
+    box-shadow: 0 0 0 3px rgba(60, 33, 126, 0.1);
+}
+
+/* Template Selection */
+.template-card {
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.template-card.active {
+    border-color: #FF5722;
+    box-shadow: 0 4px 6px -1px rgba(255, 87, 34, 0.2);
+}
+
+.template-card:hover {
+    border-color: #D1D5DB;
+}
+
+.template-card.active:hover {
+    border-color: #FF5722;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
